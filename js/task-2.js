@@ -1,3 +1,9 @@
+console.log('\n', '<task-2>');
+
+// calcAverageCalories(days) function:
+//- returns the average daily value of calories consumed for the period  
+// f(parameters): (days) - array of objects. 
+// Each object contains: day of the week and the number of calories from that day.
 function calcAverageCalories(days) {
     let averageCalories = 0;
     let caloriesSum = 0;
@@ -10,8 +16,6 @@ function calcAverageCalories(days) {
     return averageCalories = caloriesSum / lengthDays;
     
 }
-
-
 console.log(
   calcAverageCalories([
     { day: "monday", calories: 3010 },
@@ -34,8 +38,7 @@ console.log(
     { day: "saturday", calories: 2280 },
     { day: "sunday", calories: 2610 }
   ])
-); // 2270
-
+);// 2270
 console.log(
   calcAverageCalories([])
 ); // 0
